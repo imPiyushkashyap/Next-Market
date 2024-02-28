@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      'xs': '480px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -25,6 +26,7 @@ const config: Config = {
     },
     extend: {
       width: {
+        
         '25rem': '25rem',
         '30rem': '30rem',
         '35rem': '35rem',
@@ -32,6 +34,7 @@ const config: Config = {
         '45rem': '45rem'
       },
       height: {
+        
         '25rem': '25rem',
         '30rem': '30rem',
         '35rem': '35rem',
@@ -39,6 +42,12 @@ const config: Config = {
         '45rem': '45rem'
 
       },
+    },
+    fontFamily: {
+      'climate': ['Climate Crisis', 'sans-serif'],
+      'exo': ['Exo 2', 'sans-serif'],
+      'montserrat-alt': ['Montserrat Alternates', 'sans-serif'],
+      'ubuntu': ['Ubuntu', 'sans-serif'],
     },
   },
   important: true, // Enforce !important on all utilities
