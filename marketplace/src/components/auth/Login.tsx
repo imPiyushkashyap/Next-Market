@@ -5,18 +5,20 @@ import Link from "next/link";
 const Login = () => {
   return (
     <div className="flex xs:mx-7 xs:my-7 sm:mx-10 sm:my-10 flex-col text-md font-exo">
-    <div className="flex justify-end xs:mx-4 xs:my4 sm:mx-2 sm:my-2 ">
-    <Link href="/Signup"><u>Don't Have an Account? Create New </u></Link>
-    </div>
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center rounded-full bg-gray-600 text-gray-400 text-7xl h-24 w-24 mb-4 ">
-        <FaUser />
+      <div className="flex justify-end xs:mx-4 xs:my4 sm:mx-2 sm:my-2 ">
+        <Link href="/Signup">
+          <u>Don't Have an Account? Create New </u>
+        </Link>
       </div>
-      
-      {/* user */}
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex items-center justify-center rounded-full bg-gray-600 text-gray-400 text-7xl h-24 w-24 mb-4 ">
+          <FaUser />
+        </div>
+
+        {/* user */}
       </div>
       <div className="flex items-center justify-center flex-col">
-        <div className="w-fir h-fit sm:w-fit sm:h-fit xs:w-fit xs:h-fit  md:w-fit md:h-fit lg:w-fit lg:h-fit xl:w-30rem xl:h-30rem  rounded-md shadow-2xl bg-slate-300 mb-4">
+        <div className="w-fit h-fit sm:w-fit sm:h-fit xs:w-fit xs:h-fit  md:w-fit md:h-fit lg:w-fit lg:h-fit xl:w-30rem xl:h-30rem  rounded-md shadow-2xl bg-slate-300 mb-4">
           <h1 className="flex my-3 text-3xl items-center font-ubuntu justify-center">
             Login
           </h1>
@@ -28,7 +30,7 @@ const Login = () => {
               >
                 Username
               </label>
-              <input
+              <input placeholder="Enter username Or Email"
                 className="h-10 w-40 bg-slate-100 sm:w-fit md:w-fit lg:w-fit xl:w-fit  flex-grow px-4 py-4 shadow-md rounded-md"
                 type="text"
               />
@@ -42,6 +44,7 @@ const Login = () => {
                 Password
               </label>
               <input
+              placeholder="Enter your password"
                 className="h-10 bg-slate-100  w-40 sm:w-fit md:w-fit lg:w-fit xl:w-fit  flex-grow px-4 py-4  shadow-md rounded-md"
                 type="text"
               />

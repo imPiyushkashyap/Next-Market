@@ -1,12 +1,12 @@
 import React from 'react';
-import Login from './login'; 
-import Signup from './signup'; // Changed from 'signup' to 'Signup'
+// import Login from '../components/auth/Login'; 
+import Signin from '@/components/auth/Signin';
 
 const Page = () => { 
   return (
     <div className="">
-       <Login />  
-     <Signup/> 
+       {/* <Login />   */}
+     <Signin/>
     </div>
   );
 };

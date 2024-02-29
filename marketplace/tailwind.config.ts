@@ -26,20 +26,28 @@ const config: Config = {
     },
     extend: {
       width: {
-        
+        '15rem' : '15rem',
+        '20rem' : '20rem',
         '25rem': '25rem',
         '30rem': '30rem',
         '35rem': '35rem',
         '40rem': '40rem',
-        '45rem': '45rem'
+        '45rem': '45rem',
+        '50rem': '50rem',
+        '60rem': '60rem',
+        '65rem': '65rem',
       },
       height: {
-        
+        '15rem' : '15rem',
+        '20rem' : '20rem',
         '25rem': '25rem',
         '30rem': '30rem',
         '35rem': '35rem',
         '40rem': '40rem',
-        '45rem': '45rem'
+        '45rem': '45rem',
+        '50rem': '50rem',
+        '60rem': '60rem',
+        '65rem': '65rem',
 
       },
     },
