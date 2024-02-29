@@ -64,17 +64,16 @@ const Login = () => {
           </div>
 
           <div className="flex flex-row items-center justify-center gap-5">
-            {" "}
-            {/* Modified */}
+          
             <img
               src="/google.svg"
               alt="google"
-              style={{ width: "45px", height: "45px" }}
+              style={{ width: "45px", height: "45px", cursor: "pointer" }}
             />
             <img
               src="/apple.svg"
               alt="apple"
-              style={{ width: "45px", height: "43px" }}
+              style={{ width: "45px", height: "43px", cursor: "pointer" }}
             />
           </div>
         </div>
