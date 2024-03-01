@@ -1,13 +1,19 @@
 import React from 'react';
-// import Login from '../components/auth/Login'; 
-import Signin from '@/components/auth/Signin';
+import Login from '@/app/Login';
+
+ // Make sure this prints the correct value
+
+
+// import Signin from '@/app/Signin';
 
 const Page = () => { 
   return (
     <div className="">
-       {/* <Login />   */}
-     <Signin/>
+       <Login />   
+     {/* <Signin/> */}
+     
     </div>
+    
   );
 };
 

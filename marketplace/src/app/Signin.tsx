@@ -86,10 +86,11 @@ const Signin = () => {
           </form>
         </div>
         <div className="flex items-center justify-center space-x-9">
-          <button className="w-20 h-8 font-ubuntu  rounded-md shadow-md  transform transition duration-300 hover:bg-green-500 hover:scale-110">
+          <button 
+           className="w-20 h-8 font-ubuntu bg-gray-400  rounded-md shadow-md  transform transition duration-300 hover:bg-green-500 hover:scale-110">
             Confirm
           </button>
-          <button className="w-20 h-8 font-ubuntu rounded-md shadow-md transform transition duration-300 hover:bg-red-600 hover:scale-110">
+          <button className="w-20 h-8 font-ubuntu bg-gray-400 rounded-md shadow-md transform transition duration-300 hover:bg-red-600 hover:scale-110">
             Cancel
           </button>
         </div>

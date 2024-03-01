@@ -1,8 +1,14 @@
+'use client'
 import React from "react";
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
+import { signIn } from 'next-auth/react'
 
 const Login = () => {
+  const handleSignIn = async () => {
+    await signIn('google') // 'google' is the provider ID (e.g., for Google provider)
+  }
+
   return (
     <div className="flex xs:mx-7 xs:my-7 sm:mx-10 sm:my-10 flex-col text-md font-exo">
       <div className="flex justify-end xs:mx-4 xs:my4 sm:mx-2 sm:my-2 ">
@@ -14,8 +20,6 @@ const Login = () => {
         <div className="flex items-center justify-center rounded-full bg-gray-600 text-gray-400 text-7xl h-24 w-24 mb-4 ">
           <FaUser />
         </div>
-
-        {/* user */}
       </div>
       <div className="flex items-center justify-center flex-col">
         <div className="w-fit h-fit sm:w-fit sm:h-fit xs:w-fit xs:h-fit  md:w-fit md:h-fit lg:w-fit lg:h-fit xl:w-30rem xl:h-30rem  rounded-md shadow-2xl bg-slate-300 mb-4">
@@ -35,7 +39,6 @@ const Login = () => {
                 type="text"
               />
             </div>
-
             <div className="flex w-full sm:w-auto sm:h-auto xl:w-auto xl:h-auto md:w-auto md:h-auto mt-4">
               <label
                 className=" sm:text-base  md:text-base lg:text-lg xl:text-xl font-climate w-24"
@@ -44,7 +47,7 @@ const Login = () => {
                 Password
               </label>
               <input
-              placeholder="Enter your password"
+                placeholder="Enter your password"
                 className="h-10 bg-slate-100  w-40 sm:w-fit md:w-fit lg:w-fit xl:w-fit  flex-grow px-4 py-4  shadow-md rounded-md"
                 type="text"
               />
@@ -62,14 +65,14 @@ const Login = () => {
               or
             </span>
           </div>
-
           <div className="flex flex-row items-center justify-center gap-5">
-          
+         
             <img
+              onClick={handleSignIn}
               src="/google.svg"
               alt="google"
               style={{ width: "45px", height: "45px", cursor: "pointer" }}
-            />
+            /> 
             <img
               src="/apple.svg"
               alt="apple"
@@ -78,7 +81,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-
       <footer className="flex items-center justify-center">
         <div className="my-6 font-montserrat-alt">© 2024 @ Piyush</div>
       </footer>
