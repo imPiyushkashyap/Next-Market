@@ -2,8 +2,10 @@
 import React from "react";
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
-import { signIn } from 'next-auth/react'
+import { SessionProvider, signIn } from 'next-auth/react'
 
+
+ 
 const Login = () => {
   const handleSignIn = async () => {
     await signIn('google') // 'google' is the provider ID (e.g., for Google provider)
